@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { BsArrowLeftShort, BsArrowRightShort, BsBook } from 'react-icons/bs';
 import {GiAirplaneDeparture} from 'react-icons/gi'
 import Image from 'next/image';
-import Icon from '../public/logo-no-background.png';
+import Icon from '../public/logo.png';
 
 const NavBar = () => {
   const [showNav, setShowNav] = useState(true);
@@ -30,8 +30,8 @@ const NavBar = () => {
         ) : <GiAirplaneDeparture fontSize={32}/>}
       </div>
       <ul className=''>
-        <li className='px-5 py-3 hover:bg-blue-300 bg-[#2c97de] text-center items-center flex cursor-pointer text-sm'>
-          <div className='pr-4 '>
+        <li className={`justify-center ${showNav ? 'pr-6' : 'pl-3'} py-2 hover:bg-blue-300 bg-[#2c97de] text-center items-center flex cursor-pointer text-sm`}>
+          <div className='pr-3 '>
             <BsBook />{' '}
           </div>
           {showNav && 'Logbook'}

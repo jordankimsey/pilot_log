@@ -5,7 +5,7 @@ import LogBookEntriesSearch from './LogBookEntriesSearch';
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen overflow-y-hidden shadow-xl'>
+    <main className='flex h-screen overflow-y-hidden shadow-xl'>
       <NavBar />
       <div className='bg-gray-200 w-full items-center justify-between font-mono'>
         <LogbookNav />

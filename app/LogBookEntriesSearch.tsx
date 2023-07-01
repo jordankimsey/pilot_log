@@ -23,7 +23,17 @@ const LogBookEntriesSearch = () => {
           />
         </div>
       </div>
-      <div className='pt-3'>
+      <div className='pt-3 h-full overflow-y-scroll'>
+        <LogBookEntriesList />
+        <LogBookEntriesList />
+        <LogBookEntriesList />
+        <LogBookEntriesList />
+        <LogBookEntriesList />
+        <LogBookEntriesList />
+        <LogBookEntriesList />
+        <LogBookEntriesList />
+        <LogBookEntriesList />
+        <LogBookEntriesList />
         <LogBookEntriesList />
       </div>
     </div>
