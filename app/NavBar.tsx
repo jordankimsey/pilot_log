@@ -11,7 +11,7 @@ const NavBar = () => {
   return (
     <div
       className={`${
-        showNav ? 'w-52' : 'w-14'
+        showNav ? 'w-40' : 'w-14'
       } text-center bg-[#212e39] text-white shadow-xl`}
     >
       <div
@@ -27,10 +27,16 @@ const NavBar = () => {
       <div className='flex justify-center mb-2'>
         {showNav ? (
           <Image src={Icon} height={75} width={115} alt='PilotLog Logo' />
-        ) : <GiAirplaneDeparture fontSize={32}/>}
+        ) : (
+          <GiAirplaneDeparture fontSize={32} />
+        )}
       </div>
       <ul className=''>
-        <li className={`justify-center ${showNav ? 'pr-6' : 'pl-3'} py-2 hover:bg-blue-300 bg-[#2c97de] text-center items-center flex cursor-pointer text-sm`}>
+        <li
+          className={`justify-center ${
+            showNav ? 'pr-6' : 'pl-3'
+          } py-2 hover:bg-blue-300 bg-[#3498da] text-center items-center flex cursor-pointer text-sm`}
+        >
           <div className='pr-3 '>
             <BsBook />{' '}
           </div>

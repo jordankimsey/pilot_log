@@ -1,13 +1,14 @@
 import React from 'react';
 import { BsSearch } from 'react-icons/bs';
 import LogBookEntriesList from './LogBookEntriesList';
+import LogBookEntry from './LogBookEntry';
 
 const LogBookEntriesSearch = () => {
   return (
     <div className='w-80 h-full bg-white rounded-sm'>
       <div className='flex justify-between p-3'>
         <h2 className='text-gray-500'>LOGBOOK ENTRIES</h2>
-        <button className='text-sm bg-[#2c97de] text-white rounded-sm px-2 py-0.5 hover:bg-blue-300 '>
+        <button className='text-sm bg-[#3498da] text-white rounded-sm px-2 py-0.5 hover:bg-blue-300 '>
           Add Entry
         </button>
       </div>
